@@ -1,5 +1,6 @@
 替换文件中的行内样式，`<style>`标签，生成less文件
 ```
+var nemoReg = require('./nemoReg')
 gulp.task('style', [], function () {
     return gulp.src('./src/tags/setting/*.tag')
     .pipe(nemoReg(__dirname + '/src/css/param'))   // 生成的less文件路径

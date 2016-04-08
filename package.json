@@ -1,0 +1,15 @@
+{
+  "name": "Reg-inlineStyle",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "gulp": "x",
+    "through2": "x"
+  },
+  "dependencies": {
+    "gulp": "x",
+    "through2": "x"
+  },
+  "author": "luoxincheng@baidu.com",
+  "license": "ISC"
+}

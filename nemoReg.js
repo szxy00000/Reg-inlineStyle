@@ -1,8 +1,5 @@
 var through2 = require('through2');
 var fs = require('fs');
-var styleTagArr = [];
-var newTagArr = [];
-var styleObj = {};
 function reg(dirname) {
     return through2.obj(function(file, enc, cb) {
         var fileName = file.path.substr(file.path.lastIndexOf('/') + 1).replace(/\.tag/, '');
@@ -18,6 +15,9 @@ function reg(dirname) {
 
 
     function regStyle (str, fileName) {
+        var styleTagArr = [];
+        var newTagArr = [];
+        var styleObj = {};
         var tagArr = str.match(/\<\w.*\>/g);
         tagArr.forEach(function (one) {
             if (one.match(/style\=/)) {
